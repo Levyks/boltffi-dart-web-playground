@@ -9,3 +9,4 @@
 /web/main.dart.wasm*
 /web/main.dart.mjs
 /web/main.dart.support.js
+/.netlify/
