@@ -1,0 +1,32 @@
+:root { color-scheme: dark; font-family: system-ui, sans-serif; background: #101719; color: #e6eeed; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 1440px; margin: auto; padding: 40px; }
+.eyebrow { font-size: 12px; letter-spacing: 2px; color: #88d7bd; }
+h1 { font-size: clamp(28px, 4vw, 44px); letter-spacing: -1.5px; margin: 16px 0 8px; }
+header > p { color: #a7b9b5; }
+nav { display: flex; gap: 16px; align-items: center; font-size: 13px; }
+nav a { color: #88d7bd; }
+#compiler { color: #a7b9b5; }
+.toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin: 24px 0 32px; }
+button { font: inherit; font-size: 14px; background: #233333; color: #e6eeed; border: 1px solid #3b5550; border-radius: 8px; padding: 10px 14px; cursor: pointer; }
+button:hover:enabled { background: #304c43; border-color: #88d7bd; }
+button:disabled { opacity: .5; cursor: wait; }
+button:focus-visible { outline: 2px solid #88d7bd; outline-offset: 3px; }
+#run-all { background: #88d7bd; color: #10221c; border-color: #88d7bd; font-weight: 650; }
+#run-all:hover:enabled { background: #ace9d4; }
+#status, #counts { font-size: 13px; color: #a7b9b5; }
+.layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 30px; align-items: start; }
+h2 { font-size: 18px; margin: 0 0 14px; }
+.group { margin-bottom: 24px; }
+.buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+aside { background: #192324; border: 1px solid #2b3c3b; border-radius: 12px; padding: 20px; position: sticky; top: 20px; }
+aside h2 { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; }
+#results { max-height: 65vh; overflow: auto; }
+.result { border-top: 1px solid #2b3c3b; padding: 12px 0; }
+.result strong { font-size: 13px; }
+.result pre { color: #b9ccc6; font: 12px/1.6 ui-monospace, monospace; margin: 6px 0 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.pass strong { color: #88d7bd; }
+.fail strong { color: #ffa8a1; }
+.empty { color: #a7b9b5; font-size: 14px; }
+@media (max-width: 800px) { main { padding: 24px; } .layout { grid-template-columns: 1fr; } aside { position: static; } }

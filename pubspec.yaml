@@ -1,0 +1,6 @@
+name: boltffi_web_playground
+publish_to: none
+environment:
+  sdk: ^3.10.8
+dependencies:
+  web: ^1.1.1

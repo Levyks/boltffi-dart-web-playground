@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BoltFFI · Dart web playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">BOLTFFI / DART WEB + RUST</p>
+      <h1>A little bridge playground.</h1>
+      <p>Pick a pattern. Call Rust. See what comes back.</p>
+      <nav aria-label="Dart compiler">
+        <a href="?compiler=dart2js">dart2js</a>
+        <a href="?compiler=dart2wasm">dart2wasm</a>
+        <span id="compiler"></span>
+      </nav>
+      <div class="toolbar">
+        <button id="run-all" disabled>Run all patterns</button>
+        <button id="clear" disabled>Clear results</button>
+        <span id="status" role="status">Loading WASM…</span>
+      </div>
+    </header>
+    <div class="layout">
+      <section id="patterns" aria-label="Call patterns"></section>
+      <aside>
+        <h2>Results <span id="counts">0 passed · 0 failed</span></h2>
+        <div id="results" role="log" aria-live="polite"><p class="empty">Results will appear here.</p></div>
+      </aside>
+    </div>
+  </main>
+  <script type="module" src="app.mjs"></script>
+</body>
+</html>

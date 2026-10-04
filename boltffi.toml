@@ -1,0 +1,19 @@
+[package]
+name = "playground"
+
+[targets.wasm]
+enabled = true
+
+[targets.wasm.optimize]
+on_missing = "warn"
+
+[targets.wasm.typescript]
+output = "build/typescript"
+
+[targets.wasm.npm]
+output = "build/wasm"
+targets = ["web"]
+
+[targets.dart_web]
+enabled = true
+output = "web/generated"

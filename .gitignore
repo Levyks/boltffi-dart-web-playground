@@ -1,0 +1,11 @@
+/target/
+/node_modules/
+/test-results/
+/playwright-report/
+/build/
+/.dart_tool/
+/web/generated/
+/web/main.dart.js*
+/web/main.dart.wasm*
+/web/main.dart.mjs
+/web/main.dart.support.js

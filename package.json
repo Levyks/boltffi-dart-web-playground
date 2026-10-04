@@ -1,0 +1,16 @@
+{
+  "name": "boltffi-dart-web-playground",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "@boltffi/runtime": "file:../libs/boltffi/runtime/typescript"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^24.19.0",
+    "typescript": "^7.0.0"
+  }
+}
