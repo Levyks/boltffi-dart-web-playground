@@ -2,6 +2,8 @@ use std::sync::Arc;
 
 use boltffi::*;
 
+boltffi::scaffolding!();
+
 #[data]
 #[derive(Clone)]
 pub struct Message {
@@ -163,6 +165,7 @@ pub async fn call_async_calculator(calculator: impl AsyncCalculator, value: i32)
     calculator.calculate(value).await
 }
 
+#[export]
 pub struct Counter {
     value: std::sync::atomic::AtomicI32,
 }
@@ -184,6 +187,7 @@ impl Counter {
     }
 }
 
+#[export]
 pub struct EventBus {
     values: StreamProducer<i32>,
     messages: StreamProducer<Message>,
